@@ -43,7 +43,7 @@ const App = () => {
     if (charge !== "" && amount > 0) {
       if (edit) {
         let tempExpenses = expenses.map(item => {
-          return item.id == id ? { ...item, charge, amount } : item
+          return item.id === id ? { ...item, charge, amount } : item
         });
         setExpenses(tempExpenses)
         setEdit(false);
